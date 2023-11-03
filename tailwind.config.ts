@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -24,7 +25,7 @@ const config: Config = {
         secondaryGreen: "",
         secondaryPink: "",
         greyDark: "",
-        greyMid: "",
+        greyMid: "#C3C3C3",
         greyLight: "",
         success: "",
         error: "",
@@ -35,6 +36,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    }),
+  ],
 };
 export default config;
