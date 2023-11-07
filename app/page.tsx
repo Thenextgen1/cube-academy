@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Button from "./components/Buttons";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "3cube Nomination",
@@ -38,7 +39,10 @@ export default function Home() {
             title.
           </p>
           <p className=" lg:static fixed left-0 bottom-0 w-full bg-white lg:bg-none p-3 z-10">
-            <Button text={"GET STARTED"} />
+            <Link href="/your-nominations">
+              {" "}
+              <Button text={"GET STARTED"} />
+            </Link>
           </p>
         </div>
       </section>
