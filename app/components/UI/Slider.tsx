@@ -7,7 +7,7 @@ interface Props {
 
 const Slider = ({ setSliderValue }: Props) => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 lg:mx-12 mx-4">
       <ReactSlider
         className="horizontal-slider cursor-pointer"
         thumbClassName="example-thumb"

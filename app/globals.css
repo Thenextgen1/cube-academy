@@ -13,7 +13,40 @@ body {
   overflow-x: hidden !important;
   scroll-behavior: smooth;
   width: 100%;
-  background-image: url("/images/blob.svg"), linear-gradient(81deg, #A0FF1F 13.17%, #00ED71 86.83%);
-  background-repeat: no-repeat;
-  background-size: cover, contain;
+}
+
+
+
+
+
+.example-track {
+  background: #c3c3c3;
+}
+
+.example-track.example-track-0,
+.example-thumb.example-thumb-0 {
+  background: #F40256;
+}
+
+.example-thumb.example-thumb-0 {
+  top: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+
+.horizontal-slider .example-track {
+  height: 8px;
+}
+
+
+
+
+@media(min-width: 1024px) {
+  body {
+    background-image: url("/images/blob.svg"), linear-gradient(81deg, #A0FF1F 13.17%, #00ED71 86.83%);
+    background-repeat: no-repeat;
+    background-size: cover, contain;
+  }
 }
