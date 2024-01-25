@@ -1,6 +1,10 @@
+
 import Footer from "./components/BaseLayout/Footer";
 import Header from "./components/BaseLayout/Header";
+import { AppContextProvider } from "./context/AppContext";
 import "./globals.css";
+
+
 
 export default function RootLayout({
   children,
@@ -10,9 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <AppContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AppContextProvider>
       </body>
     </html>
   );
