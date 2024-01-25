@@ -1,7 +1,7 @@
 import { FetchNominees } from "@/app/services/fetchNominees";
 import { useQuery } from "@tanstack/react-query";
 
-export function useGetAdmin() {
+export function useGetNominee() {
   const { data, isPending, isSuccess, isError, error } = useQuery({
     queryKey: ["nominee"],
     queryFn: async () => await new FetchNominees().getNominee(),
