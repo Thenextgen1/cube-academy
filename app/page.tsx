@@ -39,7 +39,7 @@ export default function Home() {
             title.
           </p>
           <p className=" lg:static fixed left-0 bottom-0 w-full bg-white lg:bg-none p-3 z-10">
-            <Link href="/your-nominations">
+            <Link href="/nominate/new">
               {" "}
               <Button text={"GET STARTED"} />
             </Link>
