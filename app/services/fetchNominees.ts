@@ -11,20 +11,12 @@ export class FetchNominees {
     return client({
       method: "GET",
       url: "/api/nominee",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}}`,
-      },
     });
   }
   getAllNominations(): Promise<AxiosResponse<Nominations>> {
     return client({
       method: "GET",
       url: "/api/nomination",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}}`,
-      },
     });
   }
   getUserNomination(
@@ -33,10 +25,6 @@ export class FetchNominees {
     return client({
       method: "GET",
       url: `/api/nomination/${nomination_id}`,
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${token}}`,
-      },
     });
   }
 }
