@@ -23,7 +23,7 @@ const config: Config = {
         primaryBlack: "#000",
         primaryWhite: "#fff",
         secondaryGreen: "",
-        secondaryPink: "",
+        secondaryPink: "#F40256",
         greyDark: "",
         greyMid: "#C3C3C3",
         greyLight: "",
@@ -33,6 +33,7 @@ const config: Config = {
       boxShadow: {
         light: "0px 1px 10px 0px rgba(26, 26, 25, 0.08)",
         strong: "0px 2px 10px 0px rgba(26, 26, 25, 0.24)",
+        overlay: "0px 0px 0px 9999px rgb(0 0 0 / 23%)",
       },
     },
   },
